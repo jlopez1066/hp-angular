@@ -1,0 +1,68 @@
+/* Add application styles & imports to this file! */
+a {
+  text-decoration: none;
+}
+p {
+  font-family: Montserrat,Arial,sans-serif;
+}
+.tier1, .tier2, .tier3 {
+  box-sizing: border-box;
+  display:grid;
+  width: calc(100% - 1em);
+}
+.tier2 {
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 0.45em;
+}
+.tier2 img {
+  width: 100%;
+}
+.tier3 {
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 0.45em;
+}
+@media screen and (max-width:500px) {
+  .tier2 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .tier3 {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+.mel-promo {
+    margin-bottom: 1em;
+}
+.mel-promo--feature .mel-promo__content {
+    color: #000;
+    font-size: 12px;
+}
+.mel-promo__image {
+    margin-bottom: .2em;
+}
+.mel-promo__image img {
+  width: 100%;
+}
+.mel-promo--feature .mel-promo__content>* {
+    margin: 0;
+}
+.mel-promo__offer {
+    color: #d30e2c;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    line-height: 1.15;
+    text-transform: uppercase;
+    word-spacing: -.1em;
+}
+.mel-promo__lead-in {
+    display: block;
+    height: 12px;
+    font-size: .35em;
+    letter-spacing: normal;
+    line-height: 1.2;
+    word-spacing: -1px;
+}
+.mel-promo--feature .mel-promo__disclaimer {
+    margin-top: 10px;
+    font-size: 10px;
+}

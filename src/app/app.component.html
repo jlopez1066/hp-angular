@@ -1,0 +1,26 @@
+<div class="tier2">
+	<div class="mel-promo" *ngFor="let coupons of coupons">
+		<a class="mel-promo__link" href="{{coupons.link}}" data-analytics="block1">
+			<img class="mel-promo__image" src="{{coupons.img}}" alt="{{coupons.alt}}">
+    </a>
+  </div>
+</div>
+
+<div class="tier3">
+	<div class="mel-promo mel-promo--feature" *ngFor="let promos of promos" >
+		<a href="{{promos.link}}">
+			<div class="mel-promo__image">
+				<img src="{{promos.img}}" alt="{{promos.alt}}" />
+      </div>
+      <div class="mel-promo__content">
+        <p class="mel-promo__offer"><span class="mel-promo__lead-in" *ngIf="promos.leadIn">{{promos.leadIn}}</span>{{promos.offer}}</p>
+        <p class="mel-promo__product">{{promos.product}}</p>
+        <p class="mel-promo__brand" *ngIf="promos.brand" >{{promos.brand}}</p>
+        <p class="mel-promo__content" *ngIf="promos.content">{{promos.content}}</p>
+        <p class="mel-promo__content" *ngIf="promos.content1">{{promos.content1}}</p>
+        <p class="mel-promo__content" *ngIf="promos.content2">{{promos.content2}}</p>
+        <p class="mel-promo__disclaimer" *ngIf="promos.disclaimer">{{promos.disclaimer}}</p>
+      </div>
+    </a>
+  </div>
+</div>
